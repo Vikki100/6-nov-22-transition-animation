@@ -1,0 +1,34 @@
+
+>>  Center karne ke lye......
+ 
+    text-align:center
+    line-hight:100px	>> px utna hi dena h jitna hight and width h
+
+
+    code..
+
+        .parent:hover > .child{              
+            transform: translate(0px ,250px);
+        }
+
+note:>> parent pe hover karne par child me changes kar rhe h
+        transition ki jitne bhi properties jise state 1 me difine karte hei
+        vah parent me code write nhi hoga .....jisme changes ho raha h (jaise hamare case me child pe) usi ke state1  me code write hoga ......
+
+        .child{
+            width: 50px;
+            height: 50px;
+            background-color: cornflowerblue;
+            border-radius: 50px;
+            text-align: center;
+            line-height: 50px;
+            transform: translate(0px ,0px);
+            transition-property: transform;
+            transition-duration: 5s;
+        }
+
+
+   >>>   Sorthand of transition....
+
+          transition: all  5s linear 0.2s ;
+                    : type duration speed delay ;

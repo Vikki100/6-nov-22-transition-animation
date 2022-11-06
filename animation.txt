@@ -1,0 +1,9 @@
+	css animation properties
+
+
+	animation-name: 
+	animation-duration:
+	animation-timeing-function:
+	animation-intration-count:
+	animation-dealy:
+	animation-darection

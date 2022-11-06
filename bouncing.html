@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bouncing animation</title>
+
+    <style>
+        .box{
+            width: 80px;
+            height: 80px;
+            background:red;
+            border-radius: 80px;
+            text-align: center;
+            line-height: 80px;
+            display: inline-block;
+            /* animation-proparties */
+            animation-name: bouncing;
+            animation-duration: 1.2s;
+            animation-timing-function:ease-in;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+
+        }
+        @keyframes bouncing{
+            from{
+                transform: translate(0px,0px);
+            }
+            to{
+                transform: translate(0px,360px);
+            }
+        }
+
+        .box2{
+            background: cornflowerblue;
+            animation-delay: 0.2s;
+        }
+        
+        .box3{
+            background:darkorchid;
+            animation-delay: 0.4s;
+        }
+        .box4{
+            background:coral;
+            animation-delay: 0.6s;
+        }
+        .box5{
+            background:mediumturquoise;
+            animation-delay: 0.8s;
+        }
+        .box6{
+            background: deeppink;
+            animation-delay: 1s;
+        }
+        .box7{
+            background: yellow;
+            animation-delay: 1.2s;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box">A</div>
+    <div class="box box2">B</div>
+    <div class="box box3"> C</div>
+    <div class="box box4">D</div>
+    <div class="box box5">E</div>
+    <div class="box box6">F</div>
+    <div class="box box7">G</div>
+    
+</body>
+</html>
